@@ -16,5 +16,15 @@ pipeline{
 
 
     }
-
+    post { 
+        failure { 
+            echo 'pipleine is failed'
+        }
+        success { 
+            echo 'pipleine is succesful.. yayy!!!!'
+        }
+        always { 
+            echo 'Im here always - post build '
+        }
+    }
 }    
