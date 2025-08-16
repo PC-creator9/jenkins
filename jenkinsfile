@@ -1,0 +1,23 @@
+pipeline{
+    agent any
+    stages{
+
+        stage('first'){
+
+            steps{
+                    echo " jenkins pipleine script is working  "
+
+            }
+        }
+
+        stage('build'){
+
+            steps{
+
+                echo " build is working "
+            }
+        }
+
+    }
+
+}    
