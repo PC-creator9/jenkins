@@ -1,10 +1,8 @@
 pipeline{
     agent {
-    docker {
         
         label 'temp'
-       
-    }
+ 
 }
     stages{
 
