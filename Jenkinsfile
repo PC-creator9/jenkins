@@ -21,7 +21,7 @@ pipeline{
 
             steps{
                     sh """
-                    echo " the agent label is $environment ""
+                    echo " the agent label is $environment "
                     env
                     """
 
