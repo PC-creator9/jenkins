@@ -5,7 +5,7 @@ pipeline{
  
 }
     environment{
-        agent_label=agent-01
+        agent_label='agent-01'
     }
     stages{
 
