@@ -9,10 +9,10 @@ pipeline{
         agent_label = 'agent-01'
     }
 // exploring options
-    options {
-        timeout(time: 1, unit: 'HOURS')
-        disableConcurrentBuilds() 
-    }
+    // options {
+    //     timeout(time: 1, unit: 'HOURS')
+    //     disableConcurrentBuilds() 
+    // }
 
      parameters {
      //   string(name: 'learning', defaultValue: 'Jenkins', description: 'Who should I say hello to?')
