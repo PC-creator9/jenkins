@@ -5,7 +5,8 @@ pipeline{
  
 }
     environment{
-        agent_label='agent-01'
+
+        agent_label = 'agent-01'
     }
     stages{
 
@@ -21,7 +22,7 @@ pipeline{
 
             steps{
                     sh """
-                    echo " the agent label is $environment "
+                    echo " the agent label is $agent_label "
                     $env
                 
                 """
