@@ -50,7 +50,7 @@ pipeline{
         stage('testing params'){
 
             steps{
-                    echo " ${params.learning} "
+                    echo " ${params.TOGGLE} "
             }
         }
 
