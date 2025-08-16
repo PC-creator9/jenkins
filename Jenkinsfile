@@ -14,7 +14,7 @@ pipeline{
     //     disableConcurrentBuilds() 
     // }
 
-     parameters {
+     //parameters {
      //   string(name: 'learning', defaultValue: 'Jenkins', description: 'Who should I say hello to?')
 
     //     text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
