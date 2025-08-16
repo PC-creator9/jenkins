@@ -1,9 +1,12 @@
 pipeline{
     agent {
         
-        label 'temp'
+        label 'agent-01'
  
 }
+    environment{
+        agent_label=agent-01
+    }
     stages{
 
         stage('first'){
@@ -14,8 +17,20 @@ pipeline{
             }
         }
 
+         stage('testing env'){
+
+            steps{
+                    sh """
+                    echo " the agent label is $environment ""
+                    env
+                    """
+
+            }
+        }
+
 
     }
+    ###post-build-actions
     post { 
         failure { 
             echo 'pipleine is failed'
