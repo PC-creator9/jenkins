@@ -8,6 +8,12 @@ pipeline{
 
         agent_label = 'agent-01'
     }
+// exploring options
+    options {
+        timeout(time: 1, unit: 'HOURS')
+        disableConcurrentBuilds() 
+    }
+
     stages{
 
         stage('first'){
