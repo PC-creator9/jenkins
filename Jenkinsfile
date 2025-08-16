@@ -1,5 +1,11 @@
 pipeline{
-    agent any
+    agent {
+    docker {
+        
+        label 'temp'
+       
+    }
+}
     stages{
 
         stage('first'){
