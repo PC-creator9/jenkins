@@ -30,7 +30,7 @@ pipeline{
 
 
     }
-    ###post-build-actions
+    // post-build-actions
     post { 
         failure { 
             echo 'pipleine is failed'
